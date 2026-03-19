@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:ios_multi_slidable/src/slidable_action.dart';
+import 'package:ios_multi_slidable/ios_multi_slidable.dart';
 
 /// A highly customizable, iOS-style slidable list item with elastic over-scroll,
 /// dynamic height calculations, and sequential scale/fade animations.
@@ -87,7 +87,7 @@ class IosMultiSlidable extends StatefulWidget {
     this.tileColor,
     required this.rightActions,
     this.leftActions,
-    this.fullSwipeFraction = 0.6,
+    this.fullSwipeFraction = 0.55,
     this.enableHaptics = true,
     this.swipeToTriggerEdgeAction = true,
     this.closeOnActionTap = true,
@@ -136,7 +136,7 @@ class _IosMultiSlidableState extends State<IosMultiSlidable>
     if (currentList.isEmpty) return 0.0;
     final count = currentList.length;
 
-    return (buttonSize * count) + (widget.actionSpacing * (count - 1));
+    return (buttonSize * count) + (widget.actionSpacing * (count));
   }
 
   @override
