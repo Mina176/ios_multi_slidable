@@ -12,7 +12,7 @@ A highly customizable, iOS-style slidable list item for Flutter with elastic ove
 * Built-in haptic feedback when the user crosses the full-swipe threshold.
 
 ## example
-![demo video](./demo/)
+![demo video](https://raw.githubusercontent.com/Mina176/ios_multi_slidable/e77d3e084b1ac5db2f574c732200698b8b45620c/demo/Demo.gif)
 
 ## Getting started
 
