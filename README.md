@@ -1,39 +1,39 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+# ios_multi_slidable
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+A highly customizable, iOS-style slidable list item for Flutter with elastic over-scroll, dynamic height calculations, and sequential reveal animations.
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+*  Replicates the exact elastic stretch and sequential pop-in animations of iOS swipe actions.
+* Swipe left or right to reveal different action sets.
+
+* Built-in haptic feedback when the user crosses the full-swipe threshold.
+
+## example
+![demo video](./demo/)
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Add this to your package's `pubspec.yaml` file:
+    
+```yaml
+dependencies:
+  ios_multi_slidable: ^0.0.1
+```
+## Usage/Examples
 
 ```dart
-const like = 'sample';
+IosMultiSlidable(
+  rightActions: [
+    SlidableAction(
+      onTap: () {},
+      color: Colors.red,
+      child: const Icon(Icons.delete, color: Colors.white),
+    ),
+  ],
+  child: ListTile(title: Text('Swipe me left')),
+);
+
 ```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
