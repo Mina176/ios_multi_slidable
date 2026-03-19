@@ -6,7 +6,7 @@ A highly customizable, iOS-style slidable list item for Flutter with elastic ove
 
 ## Features
 
-*  Replicates the exact elastic stretch and sequential pop-in animations of iOS swipe actions.
+*  Replicates the exact elastic stretch and sequential pop-in animations of iOS 26 swipe actions.
 * Swipe left or right to reveal different action sets.
 
 * Built-in haptic feedback when the user crosses the full-swipe threshold.
