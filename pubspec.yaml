@@ -1,0 +1,18 @@
+name: ios_multi_slidable
+description: A highly customizable, iOS-style slidable list item with elastic over-scroll, dynamic height calculations, and sequential reveal animations.
+version: 0.0.1
+homepage: https://github.com/Mina176/ios_multi_slidable 
+repository: https://github.com/Mina176/ios_multi_slidable
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
